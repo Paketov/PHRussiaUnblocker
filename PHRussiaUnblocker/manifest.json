@@ -1,0 +1,28 @@
+{
+  "browser_action": {
+    "default_icon": {
+         "48": "icon48.png"
+    },
+    "default_title": "PHRussiaUnblocker",
+    "persistent": true,
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "match_about_blank": true,
+      "js": [ "content.js" ],
+      "matches": [ "http://pornhub.com/*", "https://*.pornhub.com/*" ],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+      "48": "icon48.png"
+   },
+  "manifest_version": 2,
+  "minimum_chrome_version": "18.0",
+  "name": "PHRussiaUnblocker",
+  "permissions": [ "browsingData", "storage", "tabs", "webNavigation", "webRequest", "webRequestBlocking", "declarativeContent", "cookies", "<all_urls>" ],
+  "version": "1.0",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
