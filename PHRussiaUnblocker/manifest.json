@@ -12,7 +12,7 @@
       "all_frames": true,
       "match_about_blank": true,
       "js": [ "content.js" ],
-      "matches": [ "http://pornhub.com/*", "https://*.pornhub.com/*" ],
+      "matches": [ "http://pornhub.com/*","http://*.pornhub.com/*", "https://pornhub.com/*", "https://*.pornhub.com/*" ],
       "run_at": "document_start"
     }
   ],
